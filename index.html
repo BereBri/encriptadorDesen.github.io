@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="encriptar">
+            <img src="imagenes/alura letra A.png" class="a-alura">
+            <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+        
+            <div class="terminos">
+                <img src="imagenes/signo Adverten.png">
+                <p>Solo letras minúsulas y sin acento</p>
+            </div>  
+
+            <div class="botones">
+                <button class="btn-enrciptar" type="button" onclick="encriptar()">Encriptar</button>
+                <input class="btn-desencriptar" type="button" value="Desencriptador " onclick="desencriptar()"/>
+            </div>
+        </div>
+        <div class="encriptado">
+            <img src="imagenes/Muñeco.png" alt="" id="munequito" class="munequito">
+            <div class="mensaje-encrip" id="mensaje-encrip">
+                <h2 id="mensaje-titulo">Ningún mensaje encontrado</h2>
+                <p class="parrafo" id="parrafo">Ingresa texto que deseas encriptar o desencriptar</p>
+                <textarea name="mensaje" id="mensaje" cols="5" rows="6" class="mensaje"></textarea>
+                <input class="btn-copiar" type="button" value="Copiar" onclick="copiar()">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+
+</html>
